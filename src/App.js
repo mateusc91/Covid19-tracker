@@ -5,6 +5,7 @@ import styles from './App.module.css';
 import {fetchData} from './api/index.js';
 
 import coronaImage from './images/image.png'
+import Footer from './components/Footer/Footer'
 
 class App extends React.Component{
     state = {
@@ -31,6 +32,7 @@ class App extends React.Component{
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
                 <Chart data = {data} country={country}/>
+                <Footer/>
             </div>
         )
     }
